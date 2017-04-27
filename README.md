@@ -28,7 +28,7 @@
 [![Build Status](https://travis-ci.org/jesusprubio/pown-logger.svg?branch=master)](https://travis-ci.org/jesusprubio/pown-logger)
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/pownjs/Lobby)
 
-> Show some common VoIP credentials in pown.js.
+> Pown.js logging helper library. The methods can be used to print common kind of messages to the console in a cute way.
 
 ## Quickstart
 
@@ -37,8 +37,6 @@ From the same directory as your project's package.json, install this module with
 ```sh
 npm install pown-logger --save
 ```
-
-The helper methods can be used to print common kind of messages to the console in a cute way.
 
 ## Developer guide
 
