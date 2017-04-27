@@ -25,7 +25,7 @@
 
 # pown-logger
 
-[![Build Status](https://travis.org/jesusprubio/pown-logger.svg?branch=master)](https://travis.ibm.com/jesusprubio/pown-logger)
+[![Build Status](https://travis-ci.org/jesusprubio/pown-logger.svg?branch=master)](https://travis-ci.org/jesusprubio/pown-logger)
 [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/pownjs/Lobby)
 
 > Show some common VoIP credentials in pown.js.
