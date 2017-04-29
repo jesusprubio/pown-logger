@@ -29,7 +29,7 @@ module.exports.info = str => console.log(chalk.blue(str));
 module.exports.json = json => console.log(prettyjson.render(json));
 
 module.exports.result = (msg, res) => {
-  console.log(`\n${emoji.get('sparkles')}  ${msg}:`);
+  console.log(`\n${emoji.get('sparkles')}  ${msg || 'Result'}:`);
 
   console.log(prettyjson.render(res));
 };

@@ -26,13 +26,15 @@ test('should not throw', (assert) => {
   logger.info(testStr);
   logger.regular('\nJSON:');
   logger.json(testJson);
-  logger.regular('\nJSON: (string)');
+  logger.regular('\nJSON: (str)');
   logger.json(testStr);
-  logger.regular('\nResult: (string)');
+  logger.regular('\nResult: (srt, srt)');
   logger.result(testStr, testStr);
-  logger.regular('\nResult: (JSON - object)');
+  logger.regular('\nResult: (null, string)');
+  logger.result(null, testStr);
+  logger.regular('\nResult: (str - objc)');
   logger.result(testStr, testJson);
-  logger.regular('\nResult: (JSON - array)');
+  logger.regular('\nResult: (objc - array)');
   logger.result(testStr, testArr);
 
   assert.ok(true);
