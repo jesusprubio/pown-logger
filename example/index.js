@@ -10,7 +10,7 @@
 const logger = require('../');
 
 
-const testArr = ['pown', 'js', 1, 2, 3, 4, 5];
+const testArr = ['pown', 'js', 'bluebox', 'chita', 'r2pipe', 'subquest', 'malware-jail'];
 
 logger.regular('\nChunks:');
-logger.chunks(testArr, 2);
+logger.chunks(testArr, 3);
