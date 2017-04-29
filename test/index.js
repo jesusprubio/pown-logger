@@ -12,7 +12,7 @@ const logger = require('../');
 
 const testStr = 'Hi world!';
 const testJson = { pown: 'js' };
-const testArr = ['pown', 'js'];
+const testArr = ['pown', 'js', 1, 2, 3, 4, 5];
 
 
 test('should not throw', (assert) => {
@@ -20,14 +20,13 @@ test('should not throw', (assert) => {
 
   console.log('\nRegular:'); // eslint-disable-line no-console
   logger.regular(testStr);
+
   logger.regular('\nTitle:');
   logger.title(testStr);
+
   logger.regular('\nInfo:');
   logger.info(testStr);
-  logger.regular('\nJSON:');
-  logger.json(testJson);
-  logger.regular('\nJSON: (str)');
-  logger.json(testStr);
+
   logger.regular('\nResult: (srt, srt)');
   logger.result(testStr, testStr);
   logger.regular('\nResult: (null, string)');
@@ -36,6 +35,11 @@ test('should not throw', (assert) => {
   logger.result(testStr, testJson);
   logger.regular('\nResult: (objc - array)');
   logger.result(testStr, testArr);
+
+  logger.regular('\nJSON:');
+  logger.json(testJson);
+  logger.regular('\nJSON: (str)');
+  logger.json(testStr);
 
   assert.ok(true);
 });
